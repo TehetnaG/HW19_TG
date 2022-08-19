@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     position: relative;
 }
@@ -12,13 +16,20 @@ header {
     align-items: center;
 }
 
+nav {
+display: flex;
+width: 50%;
+justify-content: space-around;
+margin-top: 3%;
+}
 a {
     color: black;
     text-decoration: none;
+ 
 }
 #heroSection
 {
-    display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
@@ -49,6 +60,13 @@ h1 {
       "skillThree skillFour";
   }
   
+  .title {
+display: flex;
+justify-content: space-between;
+padding-left: 5%;
+padding-right: 5%;
+
+  }
   .skillsTitle { grid-area: skillsTitle;  
 
 }
@@ -92,13 +110,35 @@ h3 {
   position: relative;
     width: 100vw;
 }
+
+.caseStudyContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 5%;
+}
+
+.caseStudyDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.CTA {
+  display: flex;
+  justify-content: space-around;
+  width: 60% ;
+
+}
 .backgroundblur {
     z-index: -1;
     position: absolute;
     top: 0%;
 }
 
-
+h4 {
+  font-size: xx-large;
+}
 
 footer {
     display: flex;
