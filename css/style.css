@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 p {
     color: rgb(5, 5, 5);
     text-align: center;
@@ -21,6 +24,8 @@ a {
   justify-content: center;
   align-items: flex-start;
   align-content: normal;
+  position: relative;
+  width: 100vw;
 }
 h1 {
     width: 20%;
@@ -31,7 +36,70 @@ h1 {
     margin: 3%;
     display: flex;
     flex-direction: column;
-}   
+}  
+#mySkills 
+{  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vw 20vw 20vw;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "skillsTitle skillsTitle"
+      "skillOne skillTwo"
+      "skillThree skillFour";
+  }
+  
+  .skillsTitle { grid-area: skillsTitle;  
+
+}
+
+h2 {
+    margin-left: 3%;
+}
+  
+  .skillOne { grid-area: skillOne; 
+  padding: 2% 0 15% 5%;
+  border-bottom: 1px dashed #717171; 
+  border-right: 1px dashed #717171;
+  }
+  
+  .skillTwo { grid-area: skillTwo; 
+    padding: 2% 0 15% 5%;
+    border-bottom: 1px dashed #717171;
+}
+  
+  .skillThree { grid-area: skillThree; 
+    padding: 2% 0 15% 5%;
+    border-right: 1px dashed #717171;
+}
+  
+  .skillFour { grid-area: skillFour; 
+    padding: 2% 0 15% 5%;
+}
+ 
+.skillcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#myProjects {
+  position: relative;
+    width: 100vw;
+}
+.backgroundblur {
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+}
+
+
+
 footer {
     display: flex;
   flex-direction: row;
@@ -39,4 +107,7 @@ footer {
   justify-content: space-around;
   align-items: flex-end;
   align-content: normal;
+  position:relative;
+  bottom: 0%;
+  width: 100vw;
 }
